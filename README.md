@@ -27,6 +27,7 @@ Wear Condition Key: (Guide to Filenames of Dataset)
 
 How to Run:
 Run 'GUI_Backend.py' from the directory 'Source Code'
+Follow "How to use?" Section in 'Milling Cutter Health Monitoring Framework.pdf' for detailed steps
 
 Known Dependancies:
 1. NumPy
