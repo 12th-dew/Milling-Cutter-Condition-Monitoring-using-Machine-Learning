@@ -10,13 +10,16 @@ folder = ''
 
 filelist=[]
 
-wear = ['111_Healthy_', '112_Flank Wear_', '113_Nose Wear_', '114_Notch Wear_', '115_Crater Wear_','116_Edge Fracture_','117_Builtup Edge_', '118_All Wear_']
+#wear = ['111_Healthy_', '112_Flank Wear_', '113_Nose Wear_', '114_Notch Wear_', '115_Crater Wear_','116_Edge Fracture_','117_Builtup Edge_', '118_All Wear_']
+
+condict = {'111': 'Healthy', '112': 'Flank Wear', '113': 'Nose Wear', '114': 'Notch Wear', 
+            '115': 'Crater Wear', '116': 'Edge Fracture', '117': 'Builtup Edge', '118': 'All Wear'}
 
 for i in range(8):
-    name = folder + str(numbers[i]) + "/Split/" + str(wear[i])
+    name = str(numbers[i]) + '/' + str(numbers[i])
     sublist = []
     for i in range(1,116):
-        fname = name + str(i) + '.csv'
+        fname = name + '_' + str(i) + '.csv'
         filelist.append(fname)
 
 
@@ -24,11 +27,8 @@ def RMS(arr):
     sq_sum = 0
     for i in arr:
         sq_sum += i**2
-
     mean_sq = sq_sum/len(arr)
     return np.sqrt(mean_sq)
-
-
 
 def stat(x):
     xmod = np.abs(x)
@@ -65,15 +65,18 @@ def stat(x):
 #                             'Sum', 'Range', '2nd Quartile', 'RMS', 'Count', 
 #                             'Shape Factor', 'Impulse Factor', 'K Factor'])
 
+
 biglist = []
 for i in filelist:
     arr = np.loadtxt(i, delimiter= ",")
     row = stat(arr)
+    condition = condict[i[:3]]
+    row.update({'Condtion': condition})
     biglist.append(row)
 
 df = pd.DataFrame(biglist, index = range(1,len(biglist)+1))
 
-df.to_csv("../Dataset/Features.csv")
+df.to_csv("Training_Features.csv")
 
 
 
