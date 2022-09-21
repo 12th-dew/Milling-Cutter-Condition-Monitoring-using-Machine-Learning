@@ -16,25 +16,19 @@ Along with this, the dataset used is also provided along with utilities to split
 Each file in the primary Dataset consists of an array of tool accelerations corresponding to the particular wear conditions. 
 
 Wear Condition Key: (Guide to Filenames of Dataset)
-'111': 'Healthy'
-'112': 'Flank Wear'
-'113': 'Nose Wear'
-'114': 'Notch Wear' 
-'115': 'Crater Wear'
-'116': 'Edge Fracture'
-'117': 'Builtup Edge'
-'118': 'All Wear'
 
-How to Run:
+- '111': 'Healthy'
+- '112': 'Flank Wear'
+- '113': 'Nose Wear'
+- '114': 'Notch Wear'
+- '115': 'Crater Wear'
+- '116': 'Edge Fracture'
+- '117': 'Builtup Edge'
+- '118': 'All Wear'
+
+## How to Run:
 Run 'GUI_Backend.py' from the directory 'Source Code'
-Follow "How to use?" Section in 'Milling Cutter Health Monitoring Framework.pdf' for detailed steps
-
-Known Dependancies:
-1. NumPy
-2. wXPython
-3. Pandas
-4. Scikit-Learn
-5. Matplotlib
+Follow "How to use?" Section in 'Milling Cutter Health Monitoring Framework.pdf' for detailed steps.
 
 
 Notes:
