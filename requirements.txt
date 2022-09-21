@@ -1,0 +1,6 @@
+The libraries required for this application are:
+1. NumPy
+2. Pandas
+3. Scikit-Learn
+4. Matplotlib
+5. WxPython
