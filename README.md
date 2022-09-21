@@ -19,7 +19,7 @@ Wear Condition Key: (Guide to Filenames of Dataset)
 '111': 'Healthy'
 '112': 'Flank Wear'
 '113': 'Nose Wear'
-'114': 'Notch Wear'
+'114': 'Notch Wear' 
 '115': 'Crater Wear'
 '116': 'Edge Fracture'
 '117': 'Builtup Edge'
