@@ -26,8 +26,15 @@ Wear Condition Key: (Guide to Filenames of Dataset)
 '118': 'All Wear'
 
 How to Run:
-1. Run 'GUI_Backend.py' from the directory 'Source Code'
-2. Use the precompiled executable 'Milling Cutter Condition Monitor.exe'
+Run 'GUI_Backend.py' from the directory 'Source Code'
+
+Known Dependancies:
+1. NumPy
+2. wXPython
+3. Pandas
+4. Scikit-Learn
+5. Matplotlib
+
 
 Notes:
 Clone the repo and open the folder in your prefered editor/IDE for proper functioning of filepaths.
